@@ -1,0 +1,688 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f7f8fc;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Heebo", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  background-color: #f7f8fc;
+  box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
+}
+.menu {
+  flex-wrap: wrap;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+.logo {
+  color: #6674cc;
+  margin-left: 0;
+  font-size: 38px;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+
+nav ul li a:hover {
+  color: blue;
+  transform: scale(1.1);
+}
+footer {
+  position: static;
+  bottom: 0%;
+  width: 100%;
+  background-color: #6674cc;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerLinks {
+  list-style: none;
+}
+.footerLinks li a {
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+}
+.footerLinks li a h2 {
+  color: white;
+  text-decoration: underline;
+  font-family: "Times New Roman", Times, serif;
+}
+.footerLinks li {
+  padding: 5px;
+}
+.socialMedia {
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background-color: #f7f8fc;
+}
+.socialMediaLogo {
+  width: 25px;
+  height: 25px;
+}
+.copyright {
+  position: relative;
+  top: 0px;
+}
+.copyright p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.blogCard {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 350px;
+  padding: 5px;
+
+  margin: 10px;
+}
+.blogCard p {
+  font-family: "Times New Roman", Times, serif;
+}
+.blogbgcolor {
+  background-color: #f7f8fc;
+}
+.blogImage {
+  padding-top: 2px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: auto;
+}
+
+.blogCard img {
+  width: 100%;
+  height: 100px;
+
+  padding-top: 10px;
+}
+
+.blogCard .text-center {
+  text-align: center;
+}
+
+.blogCard p {
+  margin-bottom: 0.5rem;
+}
+
+.blogCard blogBottom {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.blogCard blogBottom:hover {
+  background-color: #1d4ed8;
+}
+.time {
+  text-align: center;
+  padding: 0;
+}
+.blogContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.text-center {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.text-center h1 {
+  padding-bottom: 0%;
+}
+.text-center p {
+  padding-top: 0%;
+  text-align: center;
+}
+.successContainer {
+  background-color: #f7f8fc;
+  height: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+.servicesContainer {
+  border-radius: 20%;
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.servicesContainer p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.servicesCard {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 20%;
+  background-color: #6f7bf7;
+  width: 125px;
+  height: 125px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.servicesContainer:hover {
+  transform: translate(5px, -5px);
+}
+
+.mainConainerSuccess {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.servicesCard:hover {
+  background-color: #1d4ed8;
+}
+.feedbackMainContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.Feedbacks {
+  background-color: #f7f8fc;
+  padding-bottom: 10px;
+  padding-top: 0px;
+}
+.feedbackCard:hover {
+  background-color: #fff;
+  transform: translate(10px, -10px);
+  box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 1);
+}
+.client p a {
+  text-decoration: none;
+  font-size: large;
+  font-style: oblique;
+}
+
+.client {
+  gap: 10px;
+  display: flex;
+}
+.feedbackCard {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  width: 225px;
+  height: 300px;
+  background-color: #fff;
+  gap: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.feedbackCard img {
+  width: 50px;
+  height: 50px;
+}
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.skillCard {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.outer {
+  background-color: white;
+  height: 3px;
+  position: relative;
+  width: 50vw;
+}
+
+.innerFigma {
+  background-color: #ffb84c;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  right: 100%;
+  margin: auto;
+  width: 80%;
+}
+.skillCard {
+  padding-left: 10px;
+}
+.skillCard img {
+  width: 20px;
+  height: 20px;
+}
+.innerCss {
+  background-color: #ffb84c;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  right: 100%;
+  margin: auto;
+  width: 90%;
+}
+.innerJs {
+  background-color: #ffb84c;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  right: 100%;
+  margin: auto;
+  width: 60%;
+}
+.innerReact {
+  background-color: #ffb84c;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  right: 100%;
+  margin: auto;
+  width: 30%;
+}
+.productContainer {
+  margin: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.productCard img {
+  width: 80px;
+  height: 80px;
+}
+
+.productCard {
+  text-align: center;
+  border-radius: 15px;
+  gap: 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f8fc;
+  width: 250px;
+  height: auto;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.productCard img {
+  margin-top: 5px;
+}
+.productCard h4 {
+  margin-bottom: 0%;
+  font-family: "Times New Roman", Times, serif;
+}
+.productCard:hover {
+  background-color: white;
+  transform: translate(10px, -10px);
+}
+
+.portfolioContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.portfolioCard {
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  background-image: url("images/portfolio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard:hover {
+  transform: translate(5px, -5px);
+}
+.portfolioCard2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  background-image: url("images/android.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard2:hover {
+  transform: translate(5px, -5px);
+}
+
+.portfolioCard3 {
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/android2.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard3:hover {
+  transform: translate(5px, -5px);
+}
+
+.portfolioCard4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  background-image: url("images/alarm.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard4:hover {
+  transform: translate(5px, -5px);
+}
+
+.portfolioCard5 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  background-image: url("images/analytics.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard5:hover {
+  transform: translate(5px, -5px);
+}
+
+.portfolioCard6 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  background-image: url("images/webapp.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard6:hover {
+  transform: translate(5px, -5px);
+}
+.portfolioCard7 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  background-image: url("images/game.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard7:hover {
+  transform: translate(5px, -5px);
+}
+.portfolioCard8 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  background-image: url("images/game.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard8:hover {
+  transform: translate(5px, -5px);
+}
+.portfolioCard9 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  background-image: url("images/game.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.portfolioCard9:hover {
+  transform: translate(5px, -5px);
+}
+
+.buttonHover {
+  opacity: 0;
+  background-color: transparent;
+  border-radius: 15px;
+  transition: opacity 0.6s ease;
+}
+.portfolioCard:hover .buttonHover {
+  opacity: 1;
+}
+
+.portfolioCard2:hover .buttonHover {
+  opacity: 1;
+}
+
+.portfolioCard3:hover .buttonHover {
+  opacity: 1;
+}
+
+.portfolioCard4:hover .buttonHover {
+  opacity: 1;
+}
+
+.portfolioCard5:hover .buttonHover {
+  opacity: 1;
+}
+
+.portfolioCard6:hover .buttonHover {
+  opacity: 1;
+}
+
+.portfolioCard7:hover .buttonHover {
+  opacity: 1;
+}
+
+.introContainer {
+  margin-top: 30px;
+  margin-left: 100px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.introChild {
+  width: 350px;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.introChild1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.introChild2 {
+  margin: 0%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+.hireButton {
+  border: none;
+  background-color: #ffb84c;
+  color: white;
+}
+.introChild2 a img {
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+.introChild1 p:nth-child(1) {
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 30px;
+  color: #1d4ed8;
+}
+#element1 {
+  margin-top: 0;
+  font-size: 50px;
+  font-family: "Heebo", sans-serif;
+  color: black;
+  margin-bottom: 0;
+}
+.introName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  height: 250px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.hireButton a {
+  text-decoration: none;
+}
+.introChild:hover {
+  background-color: #fff;
+}
+.introName:hover {
+  background-color: #fff;
+}
+.introName p:nth-child(1) {
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 30px;
+  color: #1d4ed8;
+}
+#element2 {
+  margin: 0;
+  padding-bottom: 0;
+  font-size: 30px;
+  color: #1d4ed8;
+}
+
+.introName p:nth-child(2) {
+  margin-top: 0;
+  font-size: 50px;
+  font-family: "Heebo", sans-serif;
+  color: black;
+  margin-bottom: 0;
+}
+
+/* 
+practice
+
+
+*/
+.conainer {
+  background-color: #1d4ed8;
+  width: 100%;
+  height: 800px;
+}
+.child {
+  background-color: #ffb84c;
+  width: 100px;
+  height: 100px;
+}
